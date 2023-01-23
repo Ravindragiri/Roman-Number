@@ -6,8 +6,7 @@ using System.Runtime.CompilerServices;
 
 Console.WriteLine("Program Number to Roman Number using below given 7 Symbols:");
 Console.WriteLine("I - 1\r\nV - 5\r\nX - 10\r\nL - 50\r\nC - 100\r\nD - 500\r\nM - 1000");
-Console.WriteLine("This Program supports numbers between 1 to 3999, because above 3999 symbols are different:");
-Console.WriteLine("");
+Console.WriteLine("This Program supports numbers between 1 to 3999, because above 3999 symbols are different:\r\n");
 
 const int MIN_NUM = 1;
 const int MAX_NUM = 3999;
@@ -25,7 +24,7 @@ do
             break;
         case "2": break;
         default:
-            Console.WriteLine("Please enter correct Command.");
+            Console.WriteLine("Please enter correct Command.\r\n");
             break;
     }
 
@@ -38,13 +37,12 @@ void ProcessNumber()
     bool isValidNumber = ValidateNumber(number);
     if (!isValidNumber)
     {
-        Console.WriteLine($"Entered Number {number} is Invalid.");
-        Console.WriteLine($"Please enter Number from {MIN_NUM} to {MAX_NUM}.");
+        Console.WriteLine($"Entered Number '{number}' is Invalid. Please enter Number from {MIN_NUM} to {MAX_NUM}.\r\n");
     }
     else
     {
         var romanNumber = ConvertNumberToRoman(number);
-        Console.WriteLine($"Roman Number is: {romanNumber}.");
+        Console.WriteLine($"Roman Number is: {romanNumber}.\r\n");
     }
 }
 
