@@ -30,6 +30,7 @@ do
 
 } while (response != "2");
 
+//Validate and Convert Number
 void ProcessNumber()
 {
     Console.WriteLine("Enter Number:");
@@ -46,11 +47,16 @@ void ProcessNumber()
     }
 }
 
+//Validation
+//Null Or Empty Check
+//Data Type Check
+//Range Check
 bool ValidateNumber(string strNumber)
 {
     return !string.IsNullOrEmpty(strNumber) && int.TryParse(strNumber, out int iNumber) && iNumber >= MIN_NUM && iNumber <= MAX_NUM;
 }
 
+///Convert Number to Roman Number
 string ConvertNumberToRoman(string strNumber)
 {
     var number = Convert.ToInt32(strNumber);
