@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/RomanNumber/bin/Debug/net6.0
+/RomanNumber/obj/Debug/net6.0
+/RomanNumber/obj
+/.vs
+/.cr/personal/FavoritesList
