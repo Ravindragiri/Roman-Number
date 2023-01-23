@@ -42,6 +42,9 @@ namespace RomanNumber.Core.Manager
             } while (response != "2");
         }
 
+        /// <summary>
+        /// Validate and Convert Number
+        /// </summary>
         public void ProcessNumber()
         {
             Console.WriteLine("Enter Number:");
